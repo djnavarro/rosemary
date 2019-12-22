@@ -7,7 +7,8 @@
 %   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
 %   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
 %   R/screw_the_roses.R, R/splash.R, R/sponge.R, R/summoning_circles.R,
-%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/zzz.R
+%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
+%   R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -40,6 +41,7 @@
 \alias{summoning_circles}
 \alias{the_art_of_escaping_boxes}
 \alias{thin_swirls}
+\alias{transgender_flag}
 \alias{rosemary}
 \title{Generative artwork}
 \usage{
@@ -104,6 +106,8 @@ summoning_circles(dir = NULL, ...)
 the_art_of_escaping_boxes(dir = NULL, ...)
 
 thin_swirls(dir = NULL, ...)
+
+transgender_flag(dir = NULL, ...)
 }
 \arguments{
 \item{dir}{Directory to write file to}
