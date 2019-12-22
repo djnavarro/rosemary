@@ -2,4 +2,5 @@
 
 export(anxious_morning)
 export(arrival_in_montreal)
+export(art_deco_rocketry)
 importFrom(dplyr,"%>%")

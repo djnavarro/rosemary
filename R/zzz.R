@@ -1,6 +1,7 @@
 #' Generative artwork
 #'
 #' @param dir Directory to write file to
+#' @param version Which version to write? (0 means create all)
 #' @param ... Other arguments
 #' @name rosemary
 
