@@ -2,7 +2,7 @@
 % Please edit documentation in R/anxious_morning.R, R/arrival_in_montreal.R,
 %   R/art_deco_rocketry.R, R/bisexual_flag.R, R/constellations.R,
 %   R/crow_rings.R, R/cubismic.R, R/delaunay_duck.R, R/devil.R, R/eclipse.R,
-%   R/zzz.R
+%   R/electric_princess.R, R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -14,6 +14,7 @@
 \alias{delaunay_duck}
 \alias{devil}
 \alias{eclipse}
+\alias{electric_princess}
 \alias{rosemary}
 \title{Generative artwork}
 \usage{
@@ -36,6 +37,8 @@ delaunay_duck(dir = NULL, ...)
 devil(dir = NULL, ...)
 
 eclipse(dir = NULL, ...)
+
+electric_princess(dir = NULL, ...)
 }
 \arguments{
 \item{dir}{Directory to write file to}
