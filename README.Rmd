@@ -18,4 +18,53 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The `rosemary` package bundles a collection of generative art pieces created using the `jasmines` package.
+Making generative artwork reminds me a lot of gardening. Both are aesthetic exercise, creating a pleasant and relaxing evironment that the artist/gardener can enjoy no less than anyone visiting the space. Both are hard work, too. Learning how to prune, learning which plants will thrive in the land that you have, knowing what nutrients differnt plants need, taking care of the garden in hard times, et cetera, none of these are easy. At the end you might have a sustainable native garden that blends in seamlessly with the environment and brings you joy, but growing the garden is itself a technical and sometimes physically demanding exercise.
+
+Artwork is the similar in that respect, I have discovered. I make all my art using R, and rely heavily on the [ambient](https://github.com/thomasp85/ambient) package that provides an interface to the [FastNoise](https://github.com/Auburns/FastNoise) C++ library for generating multidimensional noise of various kinds. Taking the time to learn (a little of) the technical skill required to work with these tools allowed me to start writing my own [jasmines](https://github.com/djnavarro/jasmines) package that provides me with a collection of tools that I enjoy using. It has been (and still is) a demanding exercise that has made me think a lot about how to design programming interfaces, and while I doubt anyone except me will find much use for the jasmines package, the act of writing it is giving me joy in and of itself. Much like gardening, I find the construction process itself inherently rewarding. 
+
+Nevertheless, as with gardening, there is the personal act of creation that brings joy to the artist or gardener, and then there is also the products of that creation. Back when I still had room to garden, one of my favourite things about the jasmine vine I trained to run along the edges of our deck overlooking the valley was that at the end of every winter it would come into bloom along with the surrounding plants, and it was my favourite place to sit with a cup of coffee in the sunrise... though the children would inevitably drag me back to reality. 
+
+The `rosemary` package is where I've bundled a collection of generative art pieces I created using the `jasmines` package. The pieces themselves are publicly available as a [flickr album](https://www.flickr.com/photos/stringrbelle/albums/72157712318018668) release under a CC-BY licence, as is the `rosemary` package itself (`jasmines` is released under the more permissive MIT licence). I chose the name `jasmines` for the underlying engine not just because I love jasmines, but Jasmine is my middle name. I chose `rosemary` not just because I love rosemaries, but because I associate rosemary hedges with my mum who taught me to garden. To me, building the tool is a thing I do for myself, but the art is something I can share with others. If you would like to install the `rosemary` package, yourself, it's the usual method for installing from GitHub:
+
+```{r eval=FALSE}
+#install.packages("remotes")
+remotes::install_github("djnavarro/rosemary")
+```
+
+Each function in the package creates a single png file with the corresponding image, or, in a few cases, creates a few png files with different variants. To recreate the ["incantations"](https://www.flickr.com/photos/stringrbelle/49258652176/in/album-72157712318018668/) piece, for instance, all you need to do is:
+
+```{r eval=FALSE}
+rosemary::incantations()
+```
+
+You would probably need to specify the `dir` argument so that the function knows where to create the `incantations.png` file, but if you're lazy like me and don't want to keep specifying it every time you can specify a default location by adding a line like this to the .Rprofile:
+
+```{r eval=FALSE}
+options(rosemary.images = "/home/danielle/Desktop")
+```
+
+Enjoy!
+
+```{r delaunay_duck, echo=FALSE, message=FALSE, warning=FALSE, fig.width = 10, fig.height=10, dpi=300}
+set.seed(4)
+library(dplyr)
+dat <- jasmines::scene_delaunay(n = 20, grain = 1000) %>%
+  dplyr::filter(id %in% sample(max(id), ceiling(max(id)*.4))) %>%
+  dplyr::mutate(x = x * 5, y = y * 5) %>%
+  jasmines::unfold_tempest(iterations = 100, seed = 43, scale = .0075) %>%
+  dplyr::mutate(order = time)
+
+pic <- dat %>%
+  jasmines::style_ribbon(
+    palette = jasmines::palette_named("ropensci", type = "whitened"),
+    alpha_decay = .03,
+    alpha_init = 1,
+    background = "ghostwhite",
+    seed_fill = "#8BD3DA66",
+    seed_col = "#407070cc",
+    seed_linewidth = 1
+  ) 
+
+plot(pic)
+```
+
