@@ -16,5 +16,6 @@ BugReports: https://github.com/djnavarro/rosemary/issues
 Imports:
     jasmines,
     dplyr,
-    utils
+    utils,
+    grDevices
 RoxygenNote: 7.0.2
