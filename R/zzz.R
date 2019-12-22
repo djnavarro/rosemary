@@ -4,6 +4,10 @@
 #' @param ... Other arguments
 #' @name rosemary
 
+utils::globalVariables(c("x", "y", "id"))
+
+#' @importFrom dplyr %>%
+NULL
 
 check_dir <- function(dir) {
   if(is.null(dir)) {
