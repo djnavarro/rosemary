@@ -4,7 +4,7 @@
 %   R/crow_rings.R, R/cubismic.R, R/delaunay_duck.R, R/devil.R,
 %   R/eclipse.R, R/electric_princess.R, R/forgotten_worlds.R, R/goodnight.R,
 %   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/mermaid.R,
-%   R/mist_wraith.R, R/molten_heart.R, R/zzz.R
+%   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -25,6 +25,7 @@
 \alias{mermaid}
 \alias{mist_wraith}
 \alias{molten_heart}
+\alias{neon_heart}
 \alias{rosemary}
 \title{Generative artwork}
 \usage{
@@ -65,6 +66,8 @@ mermaid(dir = NULL, ...)
 mist_wraith(dir = NULL, ...)
 
 molten_heart(dir = NULL, version = 0, ...)
+
+neon_heart(dir = NULL, ...)
 }
 \arguments{
 \item{dir}{Directory to write file to}
