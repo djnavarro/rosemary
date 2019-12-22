@@ -17,5 +17,6 @@ Imports:
     jasmines,
     dplyr,
     utils,
-    grDevices
+    grDevices,
+    purrr
 RoxygenNote: 7.0.2
