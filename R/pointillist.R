@@ -1,0 +1,36 @@
+#' @rdname rosemary
+#' @export
+pointillist <- function(dir = NULL, ...) {
+
+  dir <- check_dir(dir)
+  file <- file.path(dir, "pointillist.png")
+
+  set.seed(1)
+
+  jasmines::scene_rows(2, 2) %>%
+    dplyr::mutate(
+      x = (x + .25)/2,
+      y = (y - .25)/2
+    ) %>%
+    jasmines::unfold_meander(
+      iterations = 500,
+      output1 = "space",
+      output2 = "id"
+    ) %>%
+    jasmines::unfold_tempest(
+      iterations = 50,
+      scale = .01
+    ) %>%
+    jasmines::style_ribbon(
+      type = "point",
+      alpha_init = .3,
+      alpha_decay = .1,
+      size = .25,
+      palette = jasmines::palette_named("lajolla")
+    ) %>% jasmines::export_image(file)
+
+  cat("image written to:", file, "\n")
+  return(invisible(NULL))
+}
+
+
