@@ -6,7 +6,8 @@
 %   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/mermaid.R,
 %   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
 %   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
-%   R/screw_the_roses.R, R/splash.R, R/sponge.R, R/zzz.R
+%   R/screw_the_roses.R, R/splash.R, R/sponge.R, R/summoning_circles.R,
+%   R/the_art_of_escaping_boxes.R, R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -36,6 +37,8 @@
 \alias{screw_the_roses}
 \alias{splash}
 \alias{sponge}
+\alias{summoning_circles}
+\alias{the_art_of_escaping_boxes}
 \alias{rosemary}
 \title{Generative artwork}
 \usage{
@@ -94,6 +97,10 @@ screw_the_roses(dir = NULL, ...)
 splash(dir = NULL, ...)
 
 sponge(dir = NULL, ...)
+
+summoning_circles(dir = NULL, ...)
+
+the_art_of_escaping_boxes(dir = NULL, ...)
 }
 \arguments{
 \item{dir}{Directory to write file to}
