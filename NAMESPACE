@@ -3,4 +3,5 @@
 export(anxious_morning)
 export(arrival_in_montreal)
 export(art_deco_rocketry)
+export(bisexual_flag)
 importFrom(dplyr,"%>%")
