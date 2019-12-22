@@ -1,17 +1,25 @@
-library(jasmines)
-library(dplyr)
-set.seed(167)
+#' @rdname rosemary
+#' @export
+anxious_morning <- function(dir = NULL, ...) {
 
-scene_delaunay(50, 50) %>%
-  mutate(x = x * 3, y = y * 3) %>%
-  unfold_tempest(
-    seed = 167,
-    iterations = 20,
-    scale = .01) %>%
-  style_ribbon(
-    background = "ghostwhite",
-    palette = palette_manual(
-      "grey","grey","black","black", "white"
-    )
-  ) %>%
-  export_image(here::here("temp","anxious_morning.png"))
+  dir <- check_dir(dir)
+  file <- file.path(dir, "anxious_morning.png")
+
+  set.seed(167)
+  jasmines::scene_delaunay(50, 50) %>%
+    dplyr::mutate(x = x * 3, y = y * 3) %>%
+    jasmines::unfold_tempest(
+      seed = 167,
+      iterations = 20,
+      scale = .01) %>%
+    jasmines::style_ribbon(
+      background = "ghostwhite",
+      palette = jasmines::palette_manual(
+        "grey","grey","black","black", "white"
+      )
+    ) %>%
+    jasmines::export_image(file)
+
+  cat("image written to:", file, "\n")
+  return(invisible(NULL))
+}
