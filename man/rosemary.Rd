@@ -3,12 +3,13 @@
 %   R/art_deco_rocketry.R, R/bisexual_flag.R, R/constellations.R,
 %   R/crow_rings.R, R/cubismic.R, R/delaunay_duck.R, R/devil.R,
 %   R/eclipse.R, R/electric_princess.R, R/forgotten_worlds.R, R/goodnight.R,
-%   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/mermaid.R,
-%   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
-%   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
-%   R/screw_the_roses.R, R/splash.R, R/sponge.R, R/summoning_circles.R,
-%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
-%   R/warped_heart.R, R/white_rose.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
+%   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/light_blades.R,
+%   R/mermaid.R, R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R,
+%   R/neon_lights.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
+%   R/rainbow_prisms.R, R/screw_the_roses.R, R/splash.R, R/sponge.R,
+%   R/summoning_circles.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
+%   R/transgender_flag.R, R/warped_heart.R, R/white_rose.R, R/wisps.R,
+%   R/wispy_heart.R, R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -26,6 +27,7 @@
 \alias{heart_sketch}
 \alias{ice_queen}
 \alias{incantations}
+\alias{light_blades}
 \alias{mermaid}
 \alias{mist_wraith}
 \alias{molten_heart}
@@ -80,6 +82,8 @@ heart_sketch(dir = NULL, ...)
 ice_queen(dir = NULL, ...)
 
 incantations(dir = NULL, ...)
+
+light_blades(dir = NULL, ...)
 
 mermaid(dir = NULL, ...)
 
