@@ -6,10 +6,10 @@
 %   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/light_blades.R,
 %   R/mermaid.R, R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R,
 %   R/neon_lights.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
-%   R/rainbow_prisms.R, R/screw_the_roses.R, R/splash.R, R/sponge.R,
-%   R/summoning_circles.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
-%   R/transgender_flag.R, R/warped_heart.R, R/white_rose.R, R/wisps.R,
-%   R/wispy_heart.R, R/zzz.R
+%   R/rainbow_prisms.R, R/rainbow_tears.R, R/screw_the_roses.R, R/splash.R,
+%   R/sponge.R, R/summoning_circles.R, R/the_art_of_escaping_boxes.R,
+%   R/thin_swirls.R, R/transgender_flag.R, R/warped_heart.R, R/white_rose.R,
+%   R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{anxious_morning}
 \alias{anxious_morning}
 \alias{arrival_in_montreal}
@@ -37,6 +37,7 @@
 \alias{pointillist}
 \alias{press_play}
 \alias{rainbow_prisms}
+\alias{rainbow_tears}
 \alias{screw_the_roses}
 \alias{splash}
 \alias{sponge}
@@ -102,6 +103,8 @@ pointillist(dir = NULL, ...)
 press_play(dir = NULL, ...)
 
 rainbow_prisms(dir = NULL, ...)
+
+rainbow_tears(dir = NULL, ...)
 
 screw_the_roses(dir = NULL, ...)
 
