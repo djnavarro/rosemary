@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258839692
+
 #' @rdname rosemary
 #' @export
 summoning_circles <- function(dir = NULL, ...) {

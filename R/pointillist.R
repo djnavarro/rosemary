@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258840772/
+
 #' @rdname rosemary
 #' @export
 pointillist <- function(dir = NULL, ...) {

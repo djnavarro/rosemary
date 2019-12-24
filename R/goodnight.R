@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258841782
+
 #' @rdname rosemary
 #' @export
 goodnight <- function(dir = NULL, ...) {

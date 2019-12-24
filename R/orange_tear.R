@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258164093
+
 #' @rdname rosemary
 #' @export
 orange_tear <- function(dir = NULL, ...) {

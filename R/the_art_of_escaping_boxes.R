@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258650251
+
 #' @rdname rosemary
 #' @export
 the_art_of_escaping_boxes <- function(dir = NULL, ...) {

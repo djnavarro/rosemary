@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258839297
+
 #' @rdname rosemary
 #' @export
 transgender_flag <- function(dir = NULL, ...) {

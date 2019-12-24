@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258652176
+
 #' @rdname rosemary
 #' @export
 incantations <- function(dir = NULL, ...) {

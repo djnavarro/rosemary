@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258841897
+
 #' @rdname rosemary
 #' @export
 forgotten_worlds <- function(dir = NULL, ...) {

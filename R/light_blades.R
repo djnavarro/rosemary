@@ -1,4 +1,4 @@
-# URL: https://www.flickr.com/photos/stringrbelle/49261220528/
+# https://www.flickr.com/photos/stringrbelle/49261220528/
 
 #' @rdname rosemary
 #' @export

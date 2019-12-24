@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258840572
+
 #' @rdname rosemary
 #' @export
 press_play <- function(dir = NULL, ...) {

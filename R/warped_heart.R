@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258162383
+
 #' @rdname rosemary
 #' @export
 warped_heart <- function(dir = NULL, ...) {

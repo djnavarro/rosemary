@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258652296
+
 #' @rdname rosemary
 #' @export
 heart_sketch <- function(dir = NULL, ...) {

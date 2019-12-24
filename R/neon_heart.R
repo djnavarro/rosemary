@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258840992
+
 #' @rdname rosemary
 #' @export
 neon_heart <- function(dir = NULL, ...) {

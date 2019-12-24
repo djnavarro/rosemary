@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258650466
+
 #' @rdname rosemary
 #' @export
 sponge <- function(dir = NULL, ...) {

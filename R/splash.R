@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258650801
+
 #' @rdname rosemary
 #' @export
 splash <- function(dir = NULL, ...) {

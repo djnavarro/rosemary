@@ -1,3 +1,7 @@
+# https://www.flickr.com/photos/stringrbelle/49258651741 (grey)
+# https://www.flickr.com/photos/stringrbelle/49258164563 (rainbow)
+# https://www.flickr.com/photos/stringrbelle/49258841042 (shuffled)
+
 #' @rdname rosemary
 #' @export
 molten_heart <- function(dir = NULL, version = 0, ...) {

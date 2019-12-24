@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258840392
+
 #' @rdname rosemary
 #' @export
 screw_the_roses <- function(dir = NULL, ...) {

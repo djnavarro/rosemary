@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258651951
+
 #' @rdname rosemary
 #' @export
 mermaid <- function(dir = NULL, ...) {

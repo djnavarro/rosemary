@@ -1,3 +1,6 @@
+# https://www.flickr.com/photos/stringrbelle/49258162383 (bright)
+# https://www.flickr.com/photos/stringrbelle/49258162383 (flat)
+
 #' @rdname rosemary
 #' @export
 wispy_heart <- function(dir = NULL, version = 0, ...) {

@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258162748
+
 #' @rdname rosemary
 #' @export
 thin_swirls <- function(dir = NULL, ...) {

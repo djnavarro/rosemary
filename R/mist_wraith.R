@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258841377
+
 #' @rdname rosemary
 #' @export
 mist_wraith <- function(dir = NULL, ...) {

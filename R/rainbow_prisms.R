@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258651086
+
 #' @rdname rosemary
 #' @export
 rainbow_prisms <- function(dir = NULL, ...) {

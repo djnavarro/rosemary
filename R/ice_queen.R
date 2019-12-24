@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258652216
+
 #' @rdname rosemary
 #' @export
 ice_queen <- function(dir = NULL, ...) {

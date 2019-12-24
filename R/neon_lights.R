@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258651471
+
 #' @rdname rosemary
 #' @export
 neon_lights <- function(dir = NULL, ...) {
