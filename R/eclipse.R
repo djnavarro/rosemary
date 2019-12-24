@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258842217
+
 #' @rdname rosemary
 #' @export
 eclipse <- function(dir = NULL, ...) {

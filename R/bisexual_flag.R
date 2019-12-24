@@ -1,3 +1,5 @@
+# URL: https://www.flickr.com/photos/stringrbelle/49258653886
+
 #' @rdname rosemary
 #' @export
 bisexual_flag <- function(dir = NULL, ...) {

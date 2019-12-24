@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258166143
+
 #' @rdname rosemary
 #' @export
 crow_rings <- function(dir = NULL, ...) {

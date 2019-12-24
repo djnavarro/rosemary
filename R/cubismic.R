@@ -1,3 +1,6 @@
+# https://www.flickr.com/photos/stringrbelle/49258166008 (light)
+# https://www.flickr.com/photos/stringrbelle/49258653196 (rainbow)
+
 #' @rdname rosemary
 #' @export
 cubismic <- function(dir = NULL, version = 0, ...) {

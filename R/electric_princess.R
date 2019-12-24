@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258165293
+
 #' @rdname rosemary
 #' @export
 electric_princess <- function(dir = NULL, ...) {

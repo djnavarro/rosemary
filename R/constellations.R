@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258842817
+
 #' @rdname rosemary
 #' @export
 constellations <- function(dir = NULL, ...) {

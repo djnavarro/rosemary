@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49258842337
+
 #' @rdname rosemary
 #' @export
 devil <- function(dir = NULL, ...) {

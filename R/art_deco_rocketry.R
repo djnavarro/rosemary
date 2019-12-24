@@ -1,3 +1,6 @@
+# URL "light": https://www.flickr.com/photos/stringrbelle/49258843257
+# URL "dark":  https://www.flickr.com/photos/stringrbelle/49258653991
+
 #' @rdname rosemary
 #' @export
 art_deco_rocketry <- function(dir = NULL, version = 0, ...) {
