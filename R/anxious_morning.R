@@ -1,3 +1,5 @@
+# URL: https://www.flickr.com/photos/stringrbelle/49258843602/
+
 #' @rdname rosemary
 #' @export
 anxious_morning <- function(dir = NULL, ...) {

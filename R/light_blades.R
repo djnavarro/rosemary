@@ -1,3 +1,5 @@
+# URL: https://www.flickr.com/photos/stringrbelle/49261220528/
+
 #' @rdname rosemary
 #' @export
 light_blades <- function(dir = NULL, ...) {
