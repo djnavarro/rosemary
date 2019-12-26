@@ -5,7 +5,7 @@
 #' @param ... Other arguments
 #' @name rosemary
 
-utils::globalVariables(c("x", "y", "id", "time", "series"))
+utils::globalVariables(c("x", "y", "id", "time", "series", "inside"))
 
 #' @importFrom dplyr %>%
 NULL

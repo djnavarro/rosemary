@@ -18,5 +18,7 @@ Imports:
     dplyr,
     utils,
     grDevices,
-    purrr
+    purrr,
+    ggplot2,
+    ambient
 RoxygenNote: 7.0.2
