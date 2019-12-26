@@ -10,7 +10,7 @@ rainbow_tears <- function(dir = NULL, ...) {
   set.seed(2)
 
   pal <- function(n, alpha, ...) {
-    c("#00000000", rainbow(n = n-1, alpha = alpha, ...))
+    c("#00000000", grDevices::rainbow(n = n-1, alpha = alpha, ...))
   }
   fname <- "~/Desktop/rain.png"
 
