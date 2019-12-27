@@ -8,7 +8,7 @@ Authors@R:
            email = "d.navarro@unsw.edu.au",
            comment = c(ORCID = "0000-0001-7648-6578"))
 Description: Generative artwork by Danielle Navarro.
-License: CC BY-SA 4.0
+    License: CC BY-SA 4.0
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/djnavarro/rosemary
