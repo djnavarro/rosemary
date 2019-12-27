@@ -6,6 +6,7 @@
 cubismic <- function(dir = NULL, version = 0, ...) {
 
   dir <- check_dir(dir)
+  local_style <- old_style_ribbon()
 
   if(version %in% c(0,1)) {
 
@@ -13,7 +14,7 @@ cubismic <- function(dir = NULL, version = 0, ...) {
     set.seed(435)
     jasmines::scene_delaunay(6, 500) %>%
       jasmines::unfold_slice() %>%
-      jasmines::style_ribbon(
+      local_style(
         palette = jasmines::palette_named("bilbao"),
         seed_col = "#ffffffaa",
         alpha_init = .1,
@@ -29,7 +30,7 @@ cubismic <- function(dir = NULL, version = 0, ...) {
     set.seed(435)
     jasmines::scene_delaunay(6, 500) %>%
       jasmines::unfold_slice() %>%
-      jasmines::style_ribbon(
+      local_style(
         palette = grDevices::rainbow,
         seed_col = "#ffffffaa",
         alpha_init = .1,

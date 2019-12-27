@@ -6,6 +6,8 @@ rainbow_prisms <- function(dir = NULL, ...) {
 
   dir <- check_dir(dir)
   file <- file.path(dir, "rainbow_prisms.png")
+  local_style <- old_style_ribbon()
+
   set.seed(1)
 
   jasmines::scene_delaunay(n = 50, grain = 500) %>%
@@ -17,7 +19,7 @@ rainbow_prisms <- function(dir = NULL, ...) {
       scale = .002
     ) %>%
     dplyr::mutate(order = id) %>%
-    jasmines::style_ribbon(
+    local_style(
       palette = grDevices::rainbow,
       alpha_init = .1,
       alpha_decay = .01,
