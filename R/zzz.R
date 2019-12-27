@@ -20,3 +20,9 @@ check_dir <- function(dir) {
   dir <- normalizePath(dir)
   return(dir)
 }
+
+clean_dir <- function(dir) {
+  if(dir.exists(dir)) {unlink(dir, recursive = TRUE)}
+  dir.create(dir)
+}
+
