@@ -3,3 +3,4 @@
 ^LICENSE\.md$
 ^temp$
 ^README\.Rmd$
+^integration_test\.R$
