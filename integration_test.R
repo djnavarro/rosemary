@@ -1,15 +1,15 @@
 # This is a crude integration test for the jasmines/rosemary packages.
 # the idea is that the "images" folder contains canonical versions
-# of the images, created by an earlier version of jasmines/rosemary. 
+# of the images, created by an earlier version of jasmines/rosemary.
 # We then run `rosemary::build_all(clean = TRUE)` to build new versions
-# in the "temp" folder. If the images have remained stable I assume 
-# that the new version of jasmines/rosemary hasn't broken anything. 
-# At some point I'll write proper unit tests... sigh.
+# in the "temp" folder. If the images have remained stable I assume
+# that the new version of jasmines/rosemary hasn't broken anything.
+# At some point I'll write proper    unit tests... sigh.
 
-# uncomment to rebuild:
-# rosemary::build_all(clean = TRUE)
+# build all takes time
+rosemary::build_all(clean = TRUE)
 
-# yeah, yeah, it's not robust... 
+# yeah, yeah, it's not robust...
 tmp_dir <- "~/Dropbox/Personal/Artwork/temp"
 img_dir <- "~/Dropbox/Personal/Artwork/images"
 
