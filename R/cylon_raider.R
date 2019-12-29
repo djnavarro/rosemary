@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49290904297
+
 #' @rdname rosemary
 #' @export
 cylon_raider <- function(dir = NULL, ...) {
