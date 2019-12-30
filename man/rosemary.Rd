@@ -6,8 +6,8 @@
 %   R/forgotten_worlds.R, R/fracture.R, R/freecell.R, R/goodnight.R,
 %   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/light_blades.R,
 %   R/mermaid.R, R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R,
-%   R/neon_lights.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
-%   R/rainbow_prisms.R, R/rainbow_tears.R, R/screw_the_roses.R,
+%   R/neon_lights.R, R/one_art_please.R, R/orange_tear.R, R/pointillist.R,
+%   R/press_play.R, R/rainbow_prisms.R, R/rainbow_tears.R, R/screw_the_roses.R,
 %   R/sea_snakes.R, R/splash.R, R/sponge.R, R/summoning_circles.R,
 %   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
 %   R/warped_heart.R, R/white_rose.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
@@ -38,6 +38,7 @@
 \alias{molten_heart}
 \alias{neon_heart}
 \alias{neon_lights}
+\alias{one_art_please}
 \alias{orange_tear}
 \alias{pointillist}
 \alias{press_play}
@@ -109,6 +110,8 @@ molten_heart(dir = NULL, version = 0, ...)
 neon_heart(dir = NULL, ...)
 
 neon_lights(dir = NULL, ...)
+
+one_art_please(dir = NULL, ...)
 
 orange_tear(dir = NULL, ...)
 
