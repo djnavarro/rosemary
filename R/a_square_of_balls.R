@@ -18,13 +18,12 @@ a_square_of_balls<- function(dir = NULL, ...) {
       background = "#ffffff",
       alpha_init = .8,
       alpha_decay = .05
+    ) %>%
+    jasmines::export_image(
+      filename = file,
+      xlim = c(.2,.8),
+      ylim = c(.2, .8)
     )
-
-  pic <- pic +
-    ggplot2::coord_cartesian(xlim= c(.2,.8), ylim = c(.2,.8))
-
-  pic %>%
-    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

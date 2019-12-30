@@ -17,12 +17,8 @@ fracture <- function(dir = NULL, ...) {
       background = "black",
       alpha_init = .2,
       alpha_decay = .15
-    )
-
-  pic <- pic +
-    ggplot2::coord_cartesian(xlim= c(.2,.8), ylim = c(.2,.8))
-
-  pic %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::export_image(file, xlim = c(.2,.8), ylim = c(.2,.8))
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

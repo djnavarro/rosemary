@@ -17,13 +17,8 @@ one_art_please <- function(dir = NULL, ...) {
     jasmines::unfold_slice(seed = 1) %>%
     jasmines::unfold_inside() %>%
     dplyr::mutate(order = 1 + (inside > 0) * id) %>%
-    jasmines::style_ribbon(palette = pal)
-
-  r <- c(.125,.875)
-  pic <- pic +
-    ggplot2::coord_cartesian(xlim= r, ylim = r)
-
-  pic %>% jasmines::export_image(file)
+    jasmines::style_ribbon(palette = pal) %>%
+    jasmines::export_image(file, xlim = c(.125,.875), ylim = c(.125,.875))
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

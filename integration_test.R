@@ -7,7 +7,7 @@
 # At some point I'll write proper    unit tests... sigh.
 
 # build all takes time
-rosemary::build_all(clean = TRUE)
+#rosemary::build_all(clean = TRUE)
 
 # yeah, yeah, it's not robust...
 tmp_dir <- "~/Dropbox/Personal/Artwork/temp"

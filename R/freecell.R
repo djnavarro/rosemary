@@ -29,13 +29,8 @@ freecell <- function(dir = NULL, ...) {
       seed_col = "#ffffff44",
       alpha_init = .8,
       alpha_decay = .001
-    )
-
-  pic <- pic +
-    ggplot2::coord_cartesian(
-      xlim = c(.25, .6), ylim = c(.25, .6))
-
-  pic %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::export_image(file, xlim = c(.25, .6), ylim = c(.25, .6))
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))
