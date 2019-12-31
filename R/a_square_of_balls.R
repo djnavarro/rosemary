@@ -7,17 +7,16 @@ a_square_of_balls<- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "a_square_of_balls.png")
 
-  jasmines::use_seed(181)
-  pic <- jasmines::scene_mix(n = 100, xpos = 1:40, ypos = 1:40,
+  jasmines::use_seed(181) %>%
+    jasmines::scene_mix(n = 100, xpos = 1:40, ypos = 1:40,
             entity = "circle", grain = 200, size = 3) %>%
     jasmines::unfold_slice(iterations = 50) %>%
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
       palette = jasmines::palette_named("base"),
-      seed_fill = "#ffffff33",
+      overlay = list(fill = "#ffffff33"),
       background = "#ffffff",
-      alpha_init = .8,
-      alpha_decay = .05
+      alpha = c(.8, .05),
     ) %>%
     jasmines::export_image(
       filename = file,

@@ -7,13 +7,10 @@ anxious_morning <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "anxious_morning.png")
 
-  set.seed(167)
-  jasmines::scene_delaunay(50, 50) %>%
+  jasmines::use_seed(167) %>%
+    jasmines::scene_delaunay(50, 50) %>%
     dplyr::mutate(x = x * 3, y = y * 3) %>%
-    jasmines::unfold_tempest(
-      seed = 167,
-      iterations = 20,
-      scale = .01) %>%
+    jasmines::unfold_tempest(iterations = 20, scale = .01) %>%
     jasmines::style_ribbon(
       background = "ghostwhite",
       palette = jasmines::palette_manual(

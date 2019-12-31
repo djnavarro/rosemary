@@ -7,9 +7,8 @@ transgender_flag <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "transgender_flag.png")
 
-set.seed(43)
-
-dat <- jasmines::scene_rows(n = 4, grain = 500) %>%
+dat <- jasmines::use_seed(43) %>%
+  jasmines::scene_rows(n = 4, grain = 500) %>%
   dplyr::mutate(
     x = x * 3,
     y = y * 3,
@@ -17,15 +16,13 @@ dat <- jasmines::scene_rows(n = 4, grain = 500) %>%
   ) %>%
   jasmines::unfold_tempest(
     iterations = 500,
-    scale = .001,
-    seed = 43
+    scale = .001
   ) %>%
   dplyr::mutate(order = time)
 
 pic <- dat %>%
   jasmines::style_ribbon(
-    alpha_init = .2,
-    alpha_decay = 0,
+    alpha = c(.2, 0),
     size = 1,
     palette = jasmines::palette_manual(
       "white", "black", "black", "black", "#f7a8b8",

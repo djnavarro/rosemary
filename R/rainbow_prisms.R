@@ -8,22 +8,19 @@ rainbow_prisms <- function(dir = NULL, ...) {
   file <- file.path(dir, "rainbow_prisms.png")
   local_style <- old_style_ribbon()
 
-  set.seed(1)
-
+  jasmines::use_seed(1) %>%
   jasmines::scene_delaunay(n = 50, grain = 500) %>%
     dplyr::filter(id %in% 4:20) %>%
-    dplyr::mutate(x = x * 5, y = y * 5) %>%
+    dplyr::mutate(x = x * 5, y = y * 5, seed = 4) %>%
     jasmines::unfold_tempest(
       iterations = 150,
-      seed = 4,
       scale = .002
     ) %>%
     dplyr::mutate(order = id) %>%
     local_style(
       palette = grDevices::rainbow,
-      alpha_init = .1,
-      alpha_decay = .01,
-      seed_col = "#ffffff33"
+      alpha = c(.1, .01),
+      overlay = list(border = "#ffffff33")
     ) %>% jasmines::export_image(file)
 
   cat("image written to:", file, "\n")

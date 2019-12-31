@@ -7,7 +7,7 @@ electric_princess <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "electric_princess.png")
 
-  set.seed(125)
+  jasmines::use_seed(125) %>%
   jasmines::entity_heart(10000) %>%
     dplyr::mutate(
       x = x * 35,
@@ -15,14 +15,12 @@ electric_princess <- function(dir = NULL, ...) {
     ) %>%
     jasmines::unfold_tempest(
       iterations = 150,
-      scale = .1,
-      seed = 125
+      scale = .1
     ) %>%
     dplyr::mutate(order = time) %>%
     jasmines::style_ribbon(
-      alpha_init = .1,
-      alpha_decay = .02,
-      seed_fill = "#000000cc",
+      alpha = c(.1, .02),
+      overlay = list(fill = "#000000cc"),
       size = 1,
       palette = jasmines::palette_manual("pink")
     ) %>%

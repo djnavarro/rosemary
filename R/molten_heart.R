@@ -10,15 +10,15 @@ molten_heart <- function(dir = NULL, version = 0, ...) {
 
   molten_heart <- function(palette, shuffle, file) {
 
-    dat <- jasmines::entity_heart(1000) %>%
+    dat <- jasmines::use_seed(125) %>%
+      jasmines::entity_heart(1000) %>%
       dplyr::mutate(
         x = x * 2,
         y = y * 2
       ) %>%
       jasmines::unfold_tempest(
         iterations = 40,
-        scale = .01,
-        seed = 125
+        scale = .01
       )
 
     if(shuffle == FALSE) {
@@ -27,8 +27,7 @@ molten_heart <- function(dir = NULL, version = 0, ...) {
 
     dat %>%
       jasmines::style_ribbon(
-        alpha_init = .8,
-        alpha_decay = .1,
+        alpha = c(.8, .1),
         size = 1,
         palette = palette
       ) %>%
@@ -39,7 +38,6 @@ molten_heart <- function(dir = NULL, version = 0, ...) {
 
   if(version %in% c(0,1)) {
 
-    set.seed(125)
     molten_heart(
       palette = jasmines::palette_named("berlin"),
       shuffle = TRUE,
@@ -48,7 +46,6 @@ molten_heart <- function(dir = NULL, version = 0, ...) {
   }
 
   if(version %in% c(0,2)) {
-    set.seed(125)
     molten_heart(
       palette = jasmines::palette_manual("grey"),
       shuffle = FALSE,
@@ -57,7 +54,6 @@ molten_heart <- function(dir = NULL, version = 0, ...) {
   }
 
   if(version %in% c(0,3)) {
-    set.seed(125)
     molten_heart(
       palette = grDevices::rainbow,
       shuffle = FALSE,

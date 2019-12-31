@@ -6,13 +6,13 @@ warped_heart <- function(dir = NULL, ...) {
 
   dir <- check_dir(dir)
   file <- file.path(dir, "warped_heart.png")
-  set.seed(126)
+  jasmines::use_seed(126) %>%
   jasmines::entity_heart(1500) %>%
     dplyr::mutate(x = x * 1.5, y = y * 1.5) %>%
-    jasmines::unfold_tempest(iterations = 2, scale = .1) %>%
+    jasmines::unfold_tempest(iterations = 2, scale = .1, scatter = TRUE) %>%
     jasmines::style_ribbon(
       type = "curve",
-      alpha_init = .2,
+      alpha = c(.2, 0),
       size = .5,
       palette = grDevices::rainbow
     ) %>%

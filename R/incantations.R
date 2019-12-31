@@ -7,8 +7,7 @@ incantations <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "incantations.png")
 
-  set.seed(125)
-
+  jasmines::use_seed(125) %>%
   jasmines::scene_rows(
     n = 6,
     grain = 500,
@@ -20,14 +19,12 @@ incantations <- function(dir = NULL, ...) {
     ) %>%
     jasmines::unfold_tempest(
       iterations = 1000,
-      scale = .0075,
-      seed = 125
+      scale = .0075
     ) %>%
     dplyr::mutate(order = time) %>%
     jasmines::style_ribbon(
-      alpha_init = .125,
-      alpha_decay = .01,
-      seed_fill = "#000000cc",
+      alpha = c(.125, .01),
+      overlay = list(fill = "#000000cc"),
       size = 1,
       palette = jasmines::palette_manual("red")
     ) %>% jasmines::export_image(file)

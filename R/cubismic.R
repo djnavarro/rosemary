@@ -11,13 +11,13 @@ cubismic <- function(dir = NULL, version = 0, ...) {
   if(version %in% c(0,1)) {
 
     file <- file.path(dir, "cubismic_light.png")
-    set.seed(435)
-    jasmines::scene_delaunay(6, 500) %>%
-      jasmines::unfold_slice() %>%
+    jasmines::use_seed(435) %>%
+      jasmines::scene_delaunay(6, 500) %>%
+      jasmines::unfold_slice(scatter = TRUE) %>%
       local_style(
         palette = jasmines::palette_named("bilbao"),
-        seed_col = "#ffffffaa",
-        alpha_init = .1,
+        overlay = list(border = "#ffffffaa"),
+        alpha= c(.1, 0),
         background = "grey10"
       ) %>% jasmines::export_image(file)
     cat("image written to:", file, "\n")
@@ -27,13 +27,13 @@ cubismic <- function(dir = NULL, version = 0, ...) {
   if(version %in% c(0,2)) {
 
     file <- file.path(dir, "cubismic_rainbow.png")
-    set.seed(435)
-    jasmines::scene_delaunay(6, 500) %>%
-      jasmines::unfold_slice() %>%
+    jasmines::use_seed(435) %>%
+      jasmines::scene_delaunay(6, 500) %>%
+      jasmines::unfold_slice(scatter = TRUE) %>%
       local_style(
         palette = grDevices::rainbow,
-        seed_col = "#ffffffaa",
-        alpha_init = .1,
+        overlay = list(border = "#ffffffaa"),
+        alpha= c(.1, 0),
         background = "#444466"
       ) %>% jasmines::export_image(file)
     cat("image written to:", file, "\n")

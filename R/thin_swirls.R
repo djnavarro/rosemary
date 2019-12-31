@@ -7,9 +7,8 @@ thin_swirls <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "thin_swirls.png")
 
-  set.seed(46)
-
-  dat <- jasmines::scene_sticks(3, 30) %>%
+  dat <- jasmines::use_seed(46) %>%
+    jasmines::scene_sticks(3, 30) %>%
     jasmines::unfold_meander(
       output1 = "space",
       output2 = "order"
@@ -38,7 +37,7 @@ thin_swirls <- function(dir = NULL, ...) {
     )
 
   dat %>% jasmines::style_ribbon(
-    alpha_init = .8,
+    alpha = c(.8, 0),
     size = .5,
     palette = jasmines::palette_named("magma")
   ) %>% jasmines::export_image(file)

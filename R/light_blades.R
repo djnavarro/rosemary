@@ -6,15 +6,15 @@ light_blades <- function(dir = NULL, ...) {
 
   dir <- check_dir(dir)
   file <- file.path(dir, "light_blades.png")
-  set.seed(1)
 
+  jasmines::use_seed(1) %>%
   jasmines::scene_grid(
     xpos = c(-1, 1) * 4,
     ypos = c(-1, 1) * 4,
     entity = "gaussian",
     grain = 2000
   ) %>%
-    jasmines::unfold_slice(iterations=15, seed = 1) %>%
+    jasmines::unfold_slice(iterations=15) %>%
     dplyr::mutate(order = dplyr::case_when(
       id == 4 ~ (16 - order),
       id == 1 ~ 1,
@@ -23,8 +23,7 @@ light_blades <- function(dir = NULL, ...) {
     jasmines::style_ribbon(
       palette = jasmines::palette_named("acton"),
       background = "lightblue",
-      alpha_init = .5,
-      alpha_decay = .1,
+      alpha = c(.5, .1),
       size = .75
     ) %>%
     jasmines::export_image(file)

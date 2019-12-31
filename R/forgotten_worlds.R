@@ -6,7 +6,6 @@ forgotten_worlds <- function(dir = NULL, ...) {
 
   dir <- check_dir(dir)
   file <- file.path(dir, "forgotten_worlds.png")
-  set.seed(46)
 
   # return a whitened version of the palette
   whiten <- function(palette, scale = .5) {
@@ -23,7 +22,8 @@ forgotten_worlds <- function(dir = NULL, ...) {
 
   pal <- whiten(jasmines::palette_named("berlin"), scale = .1)
 
-  dat <- jasmines::scene_sticks(3, 30) %>%
+  dat <- jasmines::use_seed(46) %>%
+    jasmines::scene_sticks(3, 30) %>%
     jasmines::unfold_meander(output1 = "space", output2 = "order") %>%
     dplyr::mutate(
       base_x = x,
@@ -49,7 +49,7 @@ forgotten_worlds <- function(dir = NULL, ...) {
     )
 
   dat %>% jasmines::style_ribbon(
-    alpha_init = .3,
+    alpha = c(.3, 0),
     size = .75,
     palette = pal
   ) %>%

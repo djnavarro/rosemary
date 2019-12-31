@@ -9,19 +9,18 @@ wispy_heart <- function(dir = NULL, version = 0, ...) {
 
   wsp_hrt <- function(palette, file) {
 
-    jasmines::entity_heart(200) %>%
+    jasmines::use_seed(100) %>%
+      jasmines::entity_heart(200) %>%
       dplyr::mutate(x = x * 5, y = y * 5) %>%
       jasmines::unfold_meander(iterations = 20, output1 = "space") %>%
       jasmines::unfold_tempest(
-        seed = 100,
         iterations = 300,
         scale = .001
       ) %>%
       dplyr::mutate(order = time) %>%
       jasmines::style_ribbon(
         palette = palette,
-        alpha_init = .8,
-        alpha_decay = .015,
+        alpha = c(.8, .015)
       ) %>%
       jasmines::export_image(file)
 

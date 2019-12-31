@@ -6,7 +6,6 @@ sponge <- function(dir = NULL, ...) {
 
   dir <- check_dir(dir)
   file <- file.path(dir, "sponge.png")
-  set.seed(2)
 
   darken <- function(palette, scale = .5) {
     function(n = 50, alpha = 1) {
@@ -20,22 +19,22 @@ sponge <- function(dir = NULL, ...) {
     }
   }
 
+  jasmines::use_seed(2) %>%
   jasmines::scene_delaunay(5, grain = 200) %>%
     dplyr::mutate(x = x * 15, y = y * 15) %>%
     jasmines::unfold_loop(points = 200, radius = 2) %>%
-    dplyr::mutate(id = time) %>%
+    dplyr::mutate(id = time, seed = 23) %>%
     dplyr::select(-time) %>%
     jasmines::unfold_tempest(
       scale = .2,
-      iterations = 5,
-      seed = 23
+      iterations = 5
     ) %>%
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
       background = "darkslategray",
       burnin = 4,
       type = "curve",
-      alpha_init = .05,
+      alpha = c(.05, 0),
       size = 2,
       palette = darken(jasmines::palette_named("cork"), .5),
     ) %>% jasmines::export_image(file)

@@ -7,9 +7,9 @@ pointillist <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "pointillist.png")
 
-  set.seed(1)
 
-  jasmines::scene_rows(2, 2) %>%
+  jasmines::use_seed(1) %>%
+    jasmines::scene_rows(2, 2) %>%
     dplyr::mutate(
       x = (x + .25)/2,
       y = (y - .25)/2
@@ -21,12 +21,12 @@ pointillist <- function(dir = NULL, ...) {
     ) %>%
     jasmines::unfold_tempest(
       iterations = 50,
-      scale = .01
+      scale = .01,
+      scatter = TRUE
     ) %>%
     jasmines::style_ribbon(
       type = "point",
-      alpha_init = .3,
-      alpha_decay = .1,
+      alpha = c(.3, .1),
       size = .25,
       palette = jasmines::palette_named("lajolla")
     ) %>% jasmines::export_image(file)

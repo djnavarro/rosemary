@@ -7,10 +7,10 @@ sea_snakes <- function(dir = NULL, ...) {
   dir <- check_dir(dir)
   file <- file.path(dir, "sea_snakes.png")
 
-  set.seed(1)
-  jasmines::entity_gaussian(5000) %>%
-    jasmines::unfold_tempest(seed = 1) %>%
-    jasmines::unfold_worley(seed = 1, frequency = 4) %>%
+  jasmines::use_seed(1) %>%
+    jasmines::entity_gaussian(5000) %>%
+    jasmines::unfold_tempest() %>%
+    jasmines::unfold_worley(frequency = 4) %>%
     jasmines::style_ribbon(palette = jasmines::palette_named("hawaii")) %>%
     jasmines::export_image(file)
 
