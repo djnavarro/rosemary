@@ -27,9 +27,9 @@ freecell <- function(dir = NULL, ...) {
     jasmines::style_ribbon(
       palette = pal,
       background = "ghostwhite",
-      overlay = list(border = "#ffffff44"),
       alpha = c(.8, .001)
     ) %>%
+    jasmines::style_overlay(border = "#ffffff44") %>%
     jasmines::export_image(file, xlim = c(.25, .6), ylim = c(.25, .6))
 
   cat("image written to:", file, "\n")

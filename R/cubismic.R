@@ -16,10 +16,11 @@ cubismic <- function(dir = NULL, version = 0, ...) {
       jasmines::unfold_slice(scatter = TRUE) %>%
       local_style(
         palette = jasmines::palette_named("bilbao"),
-        overlay = list(border = "#ffffffaa"),
         alpha= c(.1, 0),
         background = "grey10"
-      ) %>% jasmines::export_image(file)
+      ) %>%
+      jasmines::style_overlay(border = "#ffffffaa") %>%
+      jasmines::export_image(file)
     cat("image written to:", file, "\n")
 
   }
@@ -32,10 +33,11 @@ cubismic <- function(dir = NULL, version = 0, ...) {
       jasmines::unfold_slice(scatter = TRUE) %>%
       local_style(
         palette = grDevices::rainbow,
-        overlay = list(border = "#ffffffaa"),
         alpha= c(.1, 0),
         background = "#444466"
-      ) %>% jasmines::export_image(file)
+      ) %>%
+      jasmines::style_overlay(border = "#ffffffaa") %>%
+      jasmines::export_image(file)
     cat("image written to:", file, "\n")
 
   }

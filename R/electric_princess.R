@@ -20,10 +20,10 @@ electric_princess <- function(dir = NULL, ...) {
     dplyr::mutate(order = time) %>%
     jasmines::style_ribbon(
       alpha = c(.1, .02),
-      overlay = list(fill = "#000000cc"),
       size = 1,
       palette = jasmines::palette_manual("pink")
     ) %>%
+    jasmines::style_overlay(fill = "#000000cc") %>%
     jasmines::export_image(file)
 
   cat("image written to:", file, "\n")

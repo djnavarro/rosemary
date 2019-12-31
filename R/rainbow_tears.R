@@ -35,9 +35,9 @@ rainbow_tears <- function(dir = NULL, ...) {
     dplyr::mutate(order = 1 + (inside == 1)*id) %>%
     jasmines::style_ribbon(
       palette = pal,
-      overlay = list(fill = "#00000044"),
       alpha = c(.8, .025),
     ) %>%
+    jasmines::style_overlay(fill = "#00000044") %>%
     jasmines::export_image(file)
 
   cat("image written to:", file, "\n")

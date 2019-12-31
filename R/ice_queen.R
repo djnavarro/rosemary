@@ -38,12 +38,14 @@ ice_queen <- function(dir = NULL, ...) {
       )
     )
 
-  dat %>% jasmines::style_ribbon(
-    alpha = c(.1, 0),
-    size = .25,
-    overlay = list(border = "#ffffff88"),
-    palette = jasmines::palette_manual("#ffffff33")
-  ) %>% jasmines::export_image(file)
+  dat %>%
+    jasmines::style_ribbon(
+      alpha = c(.1, 0),
+      size = .25,
+      palette = jasmines::palette_manual("#ffffff33")
+    ) %>%
+    jasmines::style_overlay(border = "#ffffff88") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

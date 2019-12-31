@@ -18,9 +18,10 @@ goodnight <- function(dir = NULL, ...) {
     jasmines::style_ribbon(
       background = "#333333",
       palette = jasmines::palette_manual("white"),
-      overlay = list(border = "#ffffff88", fill = "#00000088"),
       alpha = c(.5, .01)
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay(border = "#ffffff88", fill = "#00000088") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

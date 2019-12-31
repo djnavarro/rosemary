@@ -4,7 +4,7 @@
 # We then run `rosemary::build_all(clean = TRUE)` to build new versions
 # in the "temp" folder. If the images have remained stable I assume
 # that the new version of jasmines/rosemary hasn't broken anything.
-# At some point I'll write proper    unit tests... sigh.
+# At some point I'll write proper unit tests... sigh.
 
 # build all takes time
 #rosemary::build_all(clean = TRUE)

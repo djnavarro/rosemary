@@ -14,10 +14,10 @@ a_square_of_balls<- function(dir = NULL, ...) {
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
       palette = jasmines::palette_named("base"),
-      overlay = list(fill = "#ffffff33"),
       background = "#ffffff",
       alpha = c(.8, .05),
     ) %>%
+    jasmines::style_overlay(fill = "#ffffff33") %>%
     jasmines::export_image(
       filename = file,
       xlim = c(.2,.8),

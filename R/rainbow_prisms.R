@@ -20,8 +20,9 @@ rainbow_prisms <- function(dir = NULL, ...) {
     local_style(
       palette = grDevices::rainbow,
       alpha = c(.1, .01),
-      overlay = list(border = "#ffffff33")
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay(border = "#ffffff33") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

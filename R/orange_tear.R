@@ -16,8 +16,9 @@ orange_tear <- function(dir = NULL, ...) {
     jasmines::style_ribbon(
       palette = jasmines::palette_manual("#ff6000"),
       alpha = c(.5, .015),
-      overlay = list(border = "#ff600066", fill = "#00000088")
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay(border = "#ff600066", fill = "#00000088") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

@@ -24,10 +24,11 @@ incantations <- function(dir = NULL, ...) {
     dplyr::mutate(order = time) %>%
     jasmines::style_ribbon(
       alpha = c(.125, .01),
-      overlay = list(fill = "#000000cc"),
       size = 1,
       palette = jasmines::palette_manual("red")
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay (fill = "#000000cc") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

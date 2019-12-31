@@ -16,7 +16,6 @@ heart_sketch <- function(dir = NULL, ...) {
     jasmines::style_ribbon(
       background = "ghostwhite",
       alpha = c(1, 0),
-      overlay = list(border = "#f8f8ff", fill = "#f8f8ffcc", linewidth = 1),
       palette = jasmines::palette_manual(
         "grey10", "grey10", "grey10", "grey10",
         "ghostwhite","ghostwhite", "ghostwhite","ghostwhite",
@@ -41,7 +40,9 @@ heart_sketch <- function(dir = NULL, ...) {
         "ghostwhite","ghostwhite", "ghostwhite","ghostwhite",
         "grey10", "grey10", "grey10", "grey10"
       )
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay(border = "#f8f8ff", fill = "#f8f8ffcc", linewidth = 1) %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

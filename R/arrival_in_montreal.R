@@ -11,15 +11,14 @@ arrival_in_montreal <- function(dir = NULL, ...) {
     jasmines::entity_heart(7000) %>%
     jasmines::unfold_tempest(iterations = 5, scale = .1, scatter = TRUE) %>%
     jasmines::style_ribbon(
-      burnin = 1,
       type = "curve",
       curvature = 1,
       size = .25,
       alpha= c(.2, .03),
       background = "black",
-      overlay = list(border = "#ffffff88", fill = "#22222288"), # blue version: fill = "#3d85c699",
       palette = jasmines::palette_manual("grey")  # blue: "#3d85c6"
     )  %>%
+    jasmines::style_overlay(border = "#ffffff88", fill = "#22222288") %>%
     jasmines::export_image(file)
 
   cat("image written to:", file, "\n")

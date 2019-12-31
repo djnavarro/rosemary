@@ -23,10 +23,11 @@ press_play <- function(dir = NULL, ...) {
     ) %>%
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
-      overlay = list(fill = "#ffffff44"),
       palette = grDevices::rainbow,
       alpha = c(.2, .02)
-    ) %>% jasmines::export_image(file)
+    ) %>%
+    jasmines::style_overlay(fill = "#ffffff44") %>%
+    jasmines::export_image(file)
 
   cat("image written to:", file, "\n")
   return(invisible(NULL))

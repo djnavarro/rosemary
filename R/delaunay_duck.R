@@ -18,9 +18,10 @@ delaunay_duck <- function(dir = NULL, ...) {
       jasmines::style_ribbon(
          palette = jasmines::palette_named("ropensci", type = "whitened"),
          alpha = c(1, .03),
-         background = "ghostwhite",
-         overlay = list(border = "#407070cc", fill = "#8BD3DA66", linewidth = 1)
-      ) %>%  jasmines::export_image(file)
+         background = "ghostwhite"
+      ) %>%
+      jasmines::style_overlay(border = "#407070cc", fill = "#8BD3DA66", linewidth = 1) %>%
+      jasmines::export_image(file)
 
    cat("image written to:", file, "\n")
    return(invisible(NULL))
