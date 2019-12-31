@@ -13,7 +13,7 @@ a_square_of_balls<- function(dir = NULL, ...) {
     jasmines::unfold_slice(iterations = 50) %>%
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
-      palette = jasmines::palette_named("base"),
+      palette = "base",
       background = "#ffffff",
       alpha = c(.8, .05),
     ) %>%
