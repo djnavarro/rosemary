@@ -11,7 +11,7 @@ wisps <- function(dir = NULL, ...) {
     jasmines::scene_bubbles(1, 5000) %>%
     jasmines::unfold_tempest(iterations = 50, scale = .05, scatter = TRUE) %>%
     jasmines::style_ribbon(
-      burnin = 45,
+      discard = 45,
       type = "curve",
       size = .25,
       alpha = c(.5, .03),

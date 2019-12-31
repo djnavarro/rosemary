@@ -11,7 +11,7 @@ devil <- function(dir = NULL, ...) {
   jasmines::scene_sticks(10, 5000) %>%
     jasmines::unfold_tempest(iterations = 5, scale = .05, scatter = TRUE) %>%
     jasmines::style_ribbon(
-      burnin = 4,
+      discard = 4,
       type = "curve",
       curvature = 1,
       size = .25,

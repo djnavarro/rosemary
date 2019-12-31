@@ -32,7 +32,7 @@ sponge <- function(dir = NULL, ...) {
     dplyr::mutate(order = id) %>%
     jasmines::style_ribbon(
       background = "darkslategray",
-      burnin = 4,
+      discard = 4,
       type = "curve",
       alpha = c(.05, 0),
       size = 2,

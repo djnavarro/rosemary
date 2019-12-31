@@ -14,7 +14,7 @@ constellations <- function(dir = NULL, ...) {
 
   pic <- dat %>%
     jasmines::style_ribbon(
-      burnin = 300,
+      discard = 300,
       alpha = c(1, .0015),
       palette = jasmines::palette_named("berlin")
     ) %>%

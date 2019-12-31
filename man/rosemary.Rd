@@ -7,10 +7,9 @@
 %   R/incantations.R, R/light_blades.R, R/mermaid.R, R/mist_wraith.R,
 %   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/one_art_please.R,
 %   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
-%   R/rainbow_tears.R, R/screw_the_roses.R, R/sea_snakes.R, R/splash.R,
-%   R/sponge.R, R/summoning_circles.R, R/the_art_of_escaping_boxes.R,
-%   R/thin_swirls.R, R/transgender_flag.R, R/warped_heart.R, R/wisps.R,
-%   R/wispy_heart.R, R/zzz.R
+%   R/rainbow_tears.R, R/screw_the_roses.R, R/sea_snakes.R, R/sponge.R,
+%   R/summoning_circles.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
+%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{anxious_morning}
@@ -45,7 +44,6 @@
 \alias{rainbow_tears}
 \alias{screw_the_roses}
 \alias{sea_snakes}
-\alias{splash}
 \alias{sponge}
 \alias{summoning_circles}
 \alias{the_art_of_escaping_boxes}
@@ -122,8 +120,6 @@ rainbow_tears(dir = NULL, ...)
 screw_the_roses(dir = NULL, ...)
 
 sea_snakes(dir = NULL, ...)
-
-splash(dir = NULL, ...)
 
 sponge(dir = NULL, ...)
 
