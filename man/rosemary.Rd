@@ -8,9 +8,10 @@
 %   R/incantations.R, R/light_blades.R, R/mermaid.R, R/mist_wraith.R,
 %   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/one_art_please.R,
 %   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
-%   R/rainbow_tears.R, R/screw_the_roses.R, R/sea_snakes.R, R/sponge.R,
-%   R/summoning_circles.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
-%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
+%   R/rainbow_tears.R, R/screw_the_roses.R, R/sea_snakes.R,
+%   R/sponge.R, R/summoning_circles.R, R/tendrils_of_memory.R,
+%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
+%   R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{anguish}
@@ -49,6 +50,7 @@
 \alias{sea_snakes}
 \alias{sponge}
 \alias{summoning_circles}
+\alias{tendrils_of_memory}
 \alias{the_art_of_escaping_boxes}
 \alias{thin_swirls}
 \alias{transgender_flag}
@@ -131,6 +133,8 @@ sea_snakes(dir = NULL, ...)
 sponge(dir = NULL, ...)
 
 summoning_circles(dir = NULL, ...)
+
+tendrils_of_memory(dir = NULL, ...)
 
 the_art_of_escaping_boxes(dir = NULL, ...)
 
