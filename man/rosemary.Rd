@@ -140,7 +140,7 @@ sponge(dir = NULL, ...)
 
 summoning_circles(dir = NULL, ...)
 
-tendrils_of_memory(dir = NULL, ...)
+tendrils_of_memory(dir = NULL, version = 0, ...)
 
 the_art_of_escaping_boxes(dir = NULL, ...)
 
