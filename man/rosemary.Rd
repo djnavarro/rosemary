@@ -6,10 +6,10 @@
 %   R/devil.R, R/electric_princess.R, R/forgotten_worlds.R, R/fracture.R,
 %   R/freecell.R, R/goodnight.R, R/heart_sketch.R, R/ice_queen.R,
 %   R/incantations.R, R/light_blades.R, R/mermaid.R, R/mist_wraith.R,
-%   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/one_art_please.R,
-%   R/orange_tear.R, R/pointillist.R, R/press_play.R, R/rainbow_prisms.R,
-%   R/rainbow_tears.R, R/screw_the_roses.R, R/sea_snakes.R,
-%   R/sponge.R, R/summoning_circles.R, R/tendrils_of_memory.R,
+%   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/nine_hearts.R,
+%   R/one_art_please.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
+%   R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R, R/screw_the_roses.R,
+%   R/sea_snakes.R, R/sponge.R, R/summoning_circles.R, R/tendrils_of_memory.R,
 %   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
 %   R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{a_square_of_balls}
@@ -40,12 +40,14 @@
 \alias{molten_heart}
 \alias{neon_heart}
 \alias{neon_lights}
+\alias{nine_hearts}
 \alias{one_art_please}
 \alias{orange_tear}
 \alias{pointillist}
 \alias{press_play}
 \alias{rainbow_prisms}
 \alias{rainbow_tears}
+\alias{regret}
 \alias{screw_the_roses}
 \alias{sea_snakes}
 \alias{sponge}
@@ -114,6 +116,8 @@ neon_heart(dir = NULL, ...)
 
 neon_lights(dir = NULL, ...)
 
+nine_hearts(dir = NULL, ...)
+
 one_art_please(dir = NULL, ...)
 
 orange_tear(dir = NULL, ...)
@@ -125,6 +129,8 @@ press_play(dir = NULL, ...)
 rainbow_prisms(dir = NULL, ...)
 
 rainbow_tears(dir = NULL, ...)
+
+regret(dir = NULL, ...)
 
 screw_the_roses(dir = NULL, ...)
 
