@@ -8,10 +8,10 @@
 %   R/incantations.R, R/light_blades.R, R/mermaid.R, R/mist_wraith.R,
 %   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/nine_hearts.R,
 %   R/one_art_please.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
-%   R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R, R/screw_the_roses.R,
-%   R/sea_snakes.R, R/sponge.R, R/summoning_circles.R, R/tendrils_of_memory.R,
-%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
-%   R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
+%   R/purple_heart.R, R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R,
+%   R/screw_the_roses.R, R/sea_snakes.R, R/sponge.R, R/summoning_circles.R,
+%   R/tendrils_of_memory.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
+%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{anguish}
@@ -45,6 +45,7 @@
 \alias{orange_tear}
 \alias{pointillist}
 \alias{press_play}
+\alias{purple_heart}
 \alias{rainbow_prisms}
 \alias{rainbow_tears}
 \alias{regret}
@@ -125,6 +126,8 @@ orange_tear(dir = NULL, ...)
 pointillist(dir = NULL, ...)
 
 press_play(dir = NULL, ...)
+
+purple_heart(dir = NULL, ...)
 
 rainbow_prisms(dir = NULL, ...)
 

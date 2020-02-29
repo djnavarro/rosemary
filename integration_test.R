@@ -10,8 +10,8 @@
 #rosemary::build_all(clean = TRUE)
 
 # yeah, yeah, it's not robust...
-tmp_dir <- "~/Dropbox/Personal/Artwork/temp"
-img_dir <- "~/Dropbox/Personal/Artwork/images"
+tmp_dir <- "~/Dropbox/personal/Artwork/temp"
+img_dir <- "~/Dropbox/personal/Artwork/images"
 
 # extract the file names in each folder
 new_files <- list.files(tmp_dir)
