@@ -1,4 +1,5 @@
-#
+# https://www.flickr.com/photos/stringrbelle/49598528453/
+
 #' @rdname rosemary
 #' @export
 stars_and_the_night_sky <- function(dir = NULL, ...) {
