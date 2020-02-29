@@ -1,3 +1,5 @@
+# https://www.flickr.com/photos/stringrbelle/49598499858/
+
 #' @rdname rosemary
 #' @export
 purple_heart <- function(dir = NULL, ...) {
