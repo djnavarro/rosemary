@@ -4,14 +4,15 @@
 %   R/art_deco_rocketry.R, R/bisexual_flag.R, R/bloody_valentine.R,
 %   R/constellations.R, R/crow_rings.R, R/cubismic.R, R/cylon_raider.R,
 %   R/delaunay_duck.R, R/devil.R, R/electric_princess.R, R/forgotten_worlds.R,
-%   R/fracture.R, R/freecell.R, R/goodnight.R, R/heart_sketch.R, R/ice_queen.R,
-%   R/incantations.R, R/light_blades.R, R/mermaid.R, R/mist_wraith.R,
-%   R/molten_heart.R, R/neon_heart.R, R/neon_lights.R, R/nine_hearts.R,
-%   R/one_art_please.R, R/orange_tear.R, R/pointillist.R, R/press_play.R,
-%   R/purple_heart.R, R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R,
-%   R/screw_the_roses.R, R/sea_snakes.R, R/sponge.R, R/summoning_circles.R,
-%   R/tendrils_of_memory.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
-%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
+%   R/fracture.R, R/freecell.R, R/goodnight.R, R/heart_sketch.R,
+%   R/ice_queen.R, R/incantations.R, R/light_blades.R, R/mermaid.R,
+%   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
+%   R/nine_hearts.R, R/one_art_please.R, R/orange_tear.R, R/pointillist.R,
+%   R/press_play.R, R/purple_heart.R, R/rainbow_prisms.R, R/rainbow_tears.R,
+%   R/regret.R, R/screw_the_roses.R, R/sea_snakes.R, R/sponge.R,
+%   R/stars_and_the_night_sky.R, R/summoning_circles.R, R/tendrils_of_memory.R,
+%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
+%   R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{anguish}
@@ -53,6 +54,7 @@
 \alias{screw_the_roses}
 \alias{sea_snakes}
 \alias{sponge}
+\alias{stars_and_the_night_sky}
 \alias{summoning_circles}
 \alias{tendrils_of_memory}
 \alias{the_art_of_escaping_boxes}
@@ -143,6 +145,8 @@ screw_the_roses(dir = NULL, ...)
 sea_snakes(dir = NULL, ...)
 
 sponge(dir = NULL, ...)
+
+stars_and_the_night_sky(dir = NULL, ...)
 
 summoning_circles(dir = NULL, ...)
 
