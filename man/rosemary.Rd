@@ -13,7 +13,8 @@
 %   R/sleep_deprived_art.R, R/sometime_angry.R, R/sometime_anxious.R,
 %   R/sponge.R, R/stars_and_the_night_sky.R, R/summoning_circles.R,
 %   R/tendrils_of_memory.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
-%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/zzz.R
+%   R/transgender_flag.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R,
+%   R/wright_blue.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{aftercare}
@@ -70,6 +71,7 @@
 \alias{warped_heart}
 \alias{wisps}
 \alias{wispy_heart}
+\alias{wright_blue}
 \alias{rosemary}
 \title{Generative artwork}
 \usage{
@@ -182,6 +184,8 @@ warped_heart(dir = NULL, ...)
 wisps(dir = NULL, ...)
 
 wispy_heart(dir = NULL, version = 0, ...)
+
+wright_blue(dir = NULL, ...)
 }
 \arguments{
 \item{dir}{Directory to write file to}
