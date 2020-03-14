@@ -4,8 +4,8 @@
 %   R/art_deco_rocketry.R, R/bisexual_flag.R, R/bloody_valentine.R,
 %   R/constellations.R, R/crow_rings.R, R/cubismic.R, R/cylon_raider.R,
 %   R/delaunay_duck.R, R/devil.R, R/electric_princess.R, R/forgotten_worlds.R,
-%   R/fracture.R, R/freecell.R, R/goodnight.R, R/gridlight.R,
-%   R/heart_sketch.R, R/ice_queen.R, R/incantations.R, R/light_blades.R,
+%   R/fracture.R, R/freecell.R, R/goodnight.R, R/gridlight.R, R/heart_sketch.R,
+%   R/ice_queen.R, R/imprint.R, R/incantations.R, R/light_blades.R,
 %   R/little_earthquake.R, R/mermaid.R, R/mist_wraith.R, R/molten_heart.R,
 %   R/neon_heart.R, R/neon_lights.R, R/nine_hearts.R, R/one_art_please.R,
 %   R/orange_tear.R, R/paper_cuts.R, R/pointillist.R, R/press_play.R,
@@ -40,6 +40,7 @@
 \alias{gridlight}
 \alias{heart_sketch}
 \alias{ice_queen}
+\alias{imprint}
 \alias{incantations}
 \alias{light_blades}
 \alias{little_earthquake}
@@ -123,6 +124,8 @@ gridlight(dir = NULL, ...)
 heart_sketch(dir = NULL, ...)
 
 ice_queen(dir = NULL, ...)
+
+imprint(dir = NULL, ...)
 
 incantations(dir = NULL, ...)
 
