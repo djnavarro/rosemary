@@ -6,11 +6,11 @@
 %   R/day_250.R, R/delaunay_duck.R, R/devil.R, R/electric_princess.R,
 %   R/forgotten_worlds.R, R/fracture.R, R/freecell.R, R/goodnight.R,
 %   R/gridlight.R, R/heart_sketch.R, R/ice_queen.R, R/imprint.R,
-%   R/incantations.R, R/light_blades.R, R/little_earthquake.R,
-%   R/mermaid.R, R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R,
-%   R/neon_lights.R, R/nine_hearts.R, R/one_art_please.R, R/orange_tear.R,
-%   R/paper_cuts.R, R/pointillist.R, R/press_play.R, R/purple_heart.R,
-%   R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R, R/screw_the_roses.R,
+%   R/incantations.R, R/light_blades.R, R/little_earthquake.R, R/mermaid.R,
+%   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
+%   R/nine_hearts.R, R/one_art_please.R, R/orange_tear.R, R/paper_cuts.R,
+%   R/pointillist.R, R/press_play.R, R/purple_heart.R, R/rainbow_prisms.R,
+%   R/rainbow_tears.R, R/regret.R, R/robot_heart.R, R/screw_the_roses.R,
 %   R/sea_snakes.R, R/sleep_deprived_art.R, R/social_distance_01.R,
 %   R/social_distance_02.R, R/social_distance_03.R, R/social_distance_04.R,
 %   R/sometime_angry.R, R/sometime_anxious.R, R/sponge.R,
@@ -62,6 +62,7 @@
 \alias{rainbow_prisms}
 \alias{rainbow_tears}
 \alias{regret}
+\alias{robot_heart}
 \alias{screw_the_roses}
 \alias{sea_snakes}
 \alias{sleep_deprived_art}
@@ -171,6 +172,8 @@ rainbow_prisms(dir = NULL, ...)
 rainbow_tears(dir = NULL, ...)
 
 regret(dir = NULL, ...)
+
+robot_heart(dir = NULL, ...)
 
 screw_the_roses(dir = NULL, ...)
 
