@@ -14,7 +14,8 @@
 %   R/sometime_angry.R, R/sometime_anxious.R, R/sponge.R,
 %   R/stars_and_the_night_sky.R, R/summoning_circles.R, R/tendrils_of_memory.R,
 %   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
-%   R/warped_heart.R, R/wisps.R, R/wispy_heart.R, R/wright_blue.R, R/zzz.R
+%   R/unknown_bear.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R,
+%   R/wright_blue.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{aftercare}
@@ -69,6 +70,7 @@
 \alias{the_art_of_escaping_boxes}
 \alias{thin_swirls}
 \alias{transgender_flag}
+\alias{unknown_bear}
 \alias{warped_heart}
 \alias{wisps}
 \alias{wispy_heart}
@@ -181,6 +183,8 @@ the_art_of_escaping_boxes(dir = NULL, ...)
 thin_swirls(dir = NULL, ...)
 
 transgender_flag(dir = NULL, ...)
+
+unknown_bear(dir = NULL, ...)
 
 warped_heart(dir = NULL, ...)
 
