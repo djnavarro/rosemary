@@ -6,17 +6,18 @@
 %   R/day_250.R, R/delaunay_duck.R, R/devil.R, R/electric_princess.R,
 %   R/forgotten_worlds.R, R/fracture.R, R/freecell.R, R/goodnight.R,
 %   R/gridlight.R, R/heart_sketch.R, R/ice_queen.R, R/imprint.R,
-%   R/incantations.R, R/light_blades.R, R/little_earthquake.R, R/mermaid.R,
-%   R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R, R/neon_lights.R,
-%   R/nine_hearts.R, R/one_art_please.R, R/orange_tear.R, R/paper_cuts.R,
-%   R/pointillist.R, R/press_play.R, R/purple_heart.R, R/rainbow_prisms.R,
-%   R/rainbow_tears.R, R/regret.R, R/screw_the_roses.R, R/sea_snakes.R,
-%   R/sleep_deprived_art.R, R/social_distance_01.R, R/social_distance_02.R,
-%   R/social_distance_03.R, R/sometime_angry.R, R/sometime_anxious.R,
-%   R/sponge.R, R/stars_and_the_night_sky.R, R/summoning_circles.R,
-%   R/tendrils_of_memory.R, R/the_art_of_escaping_boxes.R, R/thin_swirls.R,
-%   R/transgender_flag.R, R/unknown_bear.R, R/warped_heart.R, R/wisps.R,
-%   R/wispy_heart.R, R/wright_blue.R, R/zzz.R
+%   R/incantations.R, R/light_blades.R, R/little_earthquake.R,
+%   R/mermaid.R, R/mist_wraith.R, R/molten_heart.R, R/neon_heart.R,
+%   R/neon_lights.R, R/nine_hearts.R, R/one_art_please.R, R/orange_tear.R,
+%   R/paper_cuts.R, R/pointillist.R, R/press_play.R, R/purple_heart.R,
+%   R/rainbow_prisms.R, R/rainbow_tears.R, R/regret.R, R/screw_the_roses.R,
+%   R/sea_snakes.R, R/sleep_deprived_art.R, R/social_distance_01.R,
+%   R/social_distance_02.R, R/social_distance_03.R, R/social_distance_04.R,
+%   R/sometime_angry.R, R/sometime_anxious.R, R/sponge.R,
+%   R/stars_and_the_night_sky.R, R/summoning_circles.R, R/tendrils_of_memory.R,
+%   R/the_art_of_escaping_boxes.R, R/thin_swirls.R, R/transgender_flag.R,
+%   R/unknown_bear.R, R/warped_heart.R, R/wisps.R, R/wispy_heart.R,
+%   R/wright_blue.R, R/zzz.R
 \name{a_square_of_balls}
 \alias{a_square_of_balls}
 \alias{aftercare}
@@ -67,6 +68,7 @@
 \alias{social_distance_01}
 \alias{social_distance_02}
 \alias{social_distance_03}
+\alias{social_distance_04}
 \alias{sometime_angry}
 \alias{sometime_anxious}
 \alias{sponge}
@@ -181,6 +183,8 @@ social_distance_01(dir = NULL, ...)
 social_distance_02(dir = NULL, ...)
 
 social_distance_03(dir = NULL, ...)
+
+social_distance_04(dir = NULL, ...)
 
 sometime_angry(dir = NULL, ...)
 
